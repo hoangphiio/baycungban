@@ -1,0 +1,48 @@
+@import url("../assets/font/Roboto/stylesheet.css");
+@import url("../assets/font/OpenSans/stylesheet.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-weight: 400;
+  height: 100vh;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+body.home {
+  font-family: "Open Sans";
+  color: #010101;
+  letter-spacing: 0.04em;
+  line-height: 1.67;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button,
+select {
+  border: none;
+  outline: none;
+}
+
+img {
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}

@@ -1,0 +1,52 @@
+.footer {
+  &-box {
+    padding-top: 110px;
+    padding-bottom: 40px;
+    @include max(750px) {
+      padding-top: 60px;
+    }
+  }
+  &-contact {
+    @include flex-btw();
+    @include max(750px) {
+      flex-direction: column;
+    }
+    &-col {
+      @include flex();
+      align-items: center;
+      i {
+        margin-right: 5px;
+      }
+    }
+    &-inner {
+      @include flex();
+      align-items: center;
+      position: relative;
+      .line {
+        width: 40px;
+        height: 1px;
+        margin: 0 10px;
+        background: #000;
+      }
+      .ic-facebook {
+        padding-right: 10px;
+      }
+    }
+    &-inner:nth-child(1) {
+      gap: 30px;
+      @include max(750px) {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  & .bg {
+    position: absolute;
+    right: 0;
+    height: 150px;
+    margin-top: 40px;
+    background: #f4f2f9;
+    width: calc(100vw - (100vw - 1000px) / 2);
+  }
+}

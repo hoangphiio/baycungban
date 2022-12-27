@@ -1,0 +1,29 @@
+#lang-switch .icon-language img {
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+#lang-switch img:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.vn-lang,
+.eng-lang {
+  display: none !important;
+  transition: display 0.5s;
+}
+
+.active-flag {
+  transition: all 0.5s;
+  opacity: 1 !important;
+}
+
+/* Language */
+.active-lang {
+  display: flex !important;
+  transition: display 0.5s;
+}
+
+.header-title .title.active-lang {
+  display: block !important;
+}

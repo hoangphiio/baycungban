@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/icon/custom.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <title>List</title>
+</head>
+
+<body>
+    <header>
+        <div class="header header-list">
+            <div class="container">
+                <div class="header-wrap">
+                    <div class="header-box">
+                        <div class="header-inner">
+                            <div class="header-column">
+                                <div class="header-column-menu">
+                                    <div id="lang-switch" class="header-column-logo">
+                                        <a href="home.html">
+                                            <img src="./assets/img/Baycungban.png" alt="">
+                                        </a>
+                                        <a href="#" class="icon-language">
+                                            <img src="./assets/img/vietnam.png" class="vn" alt="">
+                                        </a>
+                                        <a href="#" class="icon-language">
+                                            <img src="./assets/img/united-states.png" class="eng" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="burger" id="burger">
+                                <span class="burger-line"></span>
+                                <span class="burger-line"></span>
+                                <span class="burger-line"></span>
+                            </div>
+                            <span class="overlay"></span>
+                            <div class="header-column menu" id="menu">
+                                <div class="header-column-list">
+                                    <ul class="header-column-navbar">
+                                        <li>
+                                            <a href="#" class="eng-lang menu-link">
+                                                Promotion
+                                            </a>
+                                            <a href="#" class="vn-lang menu-link">
+                                                Khuyến mãi
+                                            </a>
+
+                                        </li>
+                                        <li>
+                                            <a href="#" class="eng-lang menu-link">
+                                                Flight Schedule
+                                            </a>
+                                            <a href="#" class="vn-lang menu-link">
+                                                Lịch bay
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="eng-lang menu-link">
+                                                About us
+                                            </a>
+                                            <a href="#" class="vn-lang menu-link">
+                                                Về chúng tôi
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="eng-lang menu-link">
+                                                Payment Guide
+                                            </a>
+                                            <a href="#" class="vn-lang menu-link">
+                                                Hướng dẫn thanh toán
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header-column-button hvr-grow-shadow menu-link">
+                                    <a href="#" class="eng-lang">
+                                        Booking now
+                                    </a>
+                                    <a href="#" class="vn-lang">
+                                        Đặt vé ngay
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-list">
+        <div class="grid wide">
+            <div class="content-list">
+                <div class="tour-list">
+                    <div class="tour-box">
+                        <div class="tour-location">
+                            <div class="tour-location-left-list" id="from-filled">
+                                <span class="tour-location-left-list__city">Da Nang (DAD)</span>
+                                <span class="tour-location-left-list__nation">Fri, 22 Mar, 2022</span>
+                            </div>
+                            <div class="tour-location-swap" id="swap-m">
+                                <img onclick="toggle()" src="./img/swap-icon.png" alt="">
+                            </div>
+                            <div class="tour-location-right-list" id="to-filled">
+                                <span class="tour-location-right-list__city">Ho Chi Minh (SGN)</span>
+                                <span class="tour-location-right-list__nation">Fri, 22 Mar, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="planes-list">
+                    <div class="planes-list-box">
+                        <span>Round-trip</span>
+                    </div>
+                    <div class="planes-list-people">
+                        <span><strong class="planes-list-people__number">02 </strong>Adult, <strong
+                                class="planes-list-people__number">01 </strong> children</span>
+                    </div>
+                    <div class="planes-list-quality">
+                        <span>Business Class</span>
+                    </div>
+                </div>
+                <div class="search-list">
+                    <div class="search-list-btn hvr-grow-shadow">
+                        <div class="search-list-btn-box">
+                            <span>Change Flights</span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-content">
+        <div class="content-wrap">
+            <div class="content-box">
+                <div class="content-row">
+                    <div class="content-col-left">
+                        <div class="content-col-left-box">
+                            <span>FILTER</span>
+                            <div class="content-col-left-box__dropdown">
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">Transit</option>
+                                        <option value="1">Transit1</option>
+                                        <option value="2">Transit2</option>
+                                        <option value="3">Transit3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="content-col-left-box__dropdown">
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">Time</option>
+                                        <option value="1">Time1</option>
+                                        <option value="2">Time2</option>
+                                        <option value="3">Time3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="content-col-left-box__dropdown">
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">Airlane</option>
+                                        <option value="1">Airlane1</option>
+                                        <option value="2">Airlane2</option>
+                                        <option value="3">Airlane3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="content-col-left-box__dropdown">
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">Lowprice</option>
+                                        <option value="1">Lowprice1</option>
+                                        <option value="2">Lowprice2</option>
+                                        <option value="3">Lowprice3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Flight Detail -->
+                        <div class="content-col-left-book">
+                            <div class="content-col-left-book__wrap">
+                                <div class="content-col-right-box__adv">
+                                    <div class="content-col-right-box__adv-cricle">
+                                        <img src="./img/adv-bamboo.png" alt="">
+                                    </div>
+                                    <div class="content-col-right-box__adv-list">
+                                        <span class="content-col-right-box__adv--bamboo">Bamboo Airways</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-right-box__list">
+                                    <div class="content-col-right-box__list-time">
+                                        <span>21:40</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                    <div class="content-col-right-box__list-line">
+                                        <img src="./img/cricle-white.png" alt="">
+                                        <span class="before-img"><img src="./img/line.png" alt=""></span>
+                                        <img src="./img/cricle-black.png" alt="">
+                                    </div>
+                                    <div class="content-col-right-box__list-time">
+                                        <span>23:10</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__wrap-kg">
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/bag.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                Baggage <span class="color-bag">20kg</span>
+                                            </span>
+                                            <span class="content-col-left-book__price">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/meal.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                In-flight <span class="color-bag">Meal</span>
+                                            </span>
+                                            <span class="content-col-left-book__prices">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__choose">
+                                    <div class="content-col-left-book__choose-btn">
+                                        <span>Choose</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-col-left-tab">
+                                <div class="content-col-left-tab__tablink">
+                                    <button class="tablinks">Flight detail</button>
+                                    <button class="tablink">fare info</button>
+                                </div>
+                                <span class="border"></span>
+                            </div>
+                            <div class="content-col-left-infor">
+                                <div class="content-col-left-infor__plane">
+                                    <div class="content-col-left-infor__plane-time">
+                                        <div class="content-col-left-infor__plane-time--top">
+                                            <span class="time-plane">
+                                                21:40
+                                            </span>
+                                            <span>11 Feb</span>
+                                        </div>
+                                        <div class="content-col-left-infor__plane-time--center">
+                                            <span>
+                                                1h 30m
+                                            </span>
+                                        </div>
+                                        <div class="content-col-left-infor__plane-time--top">
+                                            <span class="time-plane">
+                                                21:40
+                                            </span>
+                                            <span>11 Feb</span>
+                                        </div>
+                                    </div>
+                                    <div class="content-col-left-infor__plane-line">
+                                        <img src="./img/line2.png" alt="">
+                                    </div>
+                                    <div class="content-col-left-infor__plane-location">
+                                        <div class="content-col-left-infor__plane-location--top">
+                                            <span class="time-plane">
+                                                Da nang (DAD)
+                                            </span>
+                                            <span>Da Nang Airport</span>
+                                        </div>
+                                        <div class="content-col-left-infor__plane-location--top">
+                                            <span class="time-plane">
+                                                Ho Chi Minh City (SGN)
+                                            </span>
+                                            <span>Tansonnhat Intl</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-infor__com">
+                                    <div class="content-col-left-infor__firm">
+                                        <div class="content-col-right-box__adv-cricle">
+                                            <img src="./img/adv-bamboo.png" alt="">
+                                        </div>
+                                        <div class="content-col-right-box__adv-list">
+                                            <span class="content-col-right-box__adv--bamboo">Bamboo Airways</span>
+                                            <span class="content-col-right-box__adv--code">QH-183 <li> Economy</li>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content-col-left-infor__bag">
+                                        <div class="content-col-left-infor__bag--one">
+                                            <span>
+                                                Baggage <span class="color-bag">20kg</span>
+                                            </span>
+                                            <span>
+                                                In-flight <span class="color-bag">Meal</span>
+                                            </span>
+                                            <span>
+                                                In-flight <span class="color-bag">Entertainment</span>
+                                            </span>
+                                        </div>
+                                        <div class="content-col-left-infor__bag--two">
+                                            <span class="margin-bag">
+                                                Aircraft <span class="color-bag">Airbus A321</span>
+                                            </span>
+                                            <span class="margin-bag">
+                                                Seat layout <span class="color-bag">3-3</span>
+                                            </span>
+                                            <span class="margin-bag">
+                                                Seat pitch <span class="color-bag">29 inches (standard)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Fare Info -->
+                        <div class="content-col-left-book fareinfo">
+                            <div class="content-col-left-book__wrap">
+                                <div class="content-col-right-box__adv">
+                                    <div class="content-col-right-box__adv-cricle">
+                                        <img src="./img/adv-bamboo.png" alt="">
+                                    </div>
+                                    <div class="content-col-right-box__adv-list">
+                                        <span class="content-col-right-box__adv--bamboo">Bamboo Airways</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-right-box__list">
+                                    <div class="content-col-right-box__list-time">
+                                        <span>21:40</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                    <div class="content-col-right-box__list-line">
+                                        <img src="./img/cricle-white.png" alt="">
+                                        <span class="before-img"><img src="./img/line.png" alt=""></span>
+                                        <img src="./img/cricle-black.png" alt="">
+                                    </div>
+                                    <div class="content-col-right-box__list-time">
+                                        <span>23:10</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__wrap-kg">
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/bag.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                Baggage <span class="color-bag">20kg</span>
+                                            </span>
+                                            <span class="content-col-left-book__price">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/meal.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                In-flight <span class="color-bag">Meal</span>
+                                            </span>
+                                            <span class="content-col-left-book__prices">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__choose button-bold   ">
+                                    <div class="content-col-left-book__choose-btn button-text">
+                                        <span>Choose</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-col-left-tab">
+                                <div class="content-col-left-tab__tablink">
+                                    <button class="tablink">Flight
+                                        detail</button>
+                                    <button class="tablinks-two">fare info</button>
+                                </div>
+                                <span class="border"></span>
+                            </div>
+                            <div class="content-col-left-infor">
+                                <div class="content-col-left-infor__plane">
+                                    <div class="content-col-left-infor__plane-fareone">
+                                        <span class="content-col-left-infor__plane-faretwo--cd">Conditions</span>
+                                        <div class="content-col-left-infor__firm">
+                                            <div class="content-col-right-box__adv-cricle">
+                                                <img src="./img/adv-bamboo.png" alt="">
+                                            </div>
+                                            <div class="content-col-right-box__adv-list">
+                                                <span class="content-col-right-box__adv--bamboo">Bamboo Airways</span>
+                                                <span class="content-col-right-box__adv--code">QH-183 <li> Economy</li>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="content-col-left-infor__plane-fareone-location">
+                                            <div class="content-col-left-infor__plane-fareone-location-one">
+                                                <span>Da Nang</span>
+                                                <span class="underline">Economy</span>
+                                            </div>
+                                            <div class="content-col-left-infor__plane-fareone-location-two">
+                                                <img src="./img/cricle-white.png" alt="">
+                                                <img src="./img/line3.png" alt="">
+                                                <img src="./img/cricle-black.png" alt="">
+                                            </div>
+                                            <div class="content-col-left-infor__plane-fareone-location-three">
+                                                <span>Ho Chi Minh City</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-col-left-infor__plane-fareone-refund">
+                                            <span>Non - Refundable</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-infor__com">
+                                    <div class="content-col-left-infor__plane-faretwo">
+                                        <span class="content-col-left-infor__plane-faretwo--pd">price details</span>
+                                        <div class="content-col-left-infor__bag fareinfo-bg">
+                                            <div class="content-col-left-infor__bag--one fareinfo-text">
+                                                <span>
+                                                    Adult Basic Fare (x1)
+                                                </span>
+                                                <span>
+                                                    Tax
+                                                </span>
+                                                <span>
+                                                    Total Price Regular
+                                                </span>
+                                                <span class="fareinfo-bag">Save</span>
+                                                <span>
+                                                    You pay
+                                                </span>
+                                            </div>
+                                            <div class="content-col-left-infor__bag--two">
+                                                <span class="margin-bag">
+                                                    <strong>1,326,000 vnd</strong>
+                                                </span>
+                                                <span class="margin-bag">
+                                                    included
+                                                </span>
+                                                <span class="margin-bag">
+                                                    1,326,000 vnd
+                                                </span>
+                                                <span class="margin-bag">
+                                                    -4,000 vnd
+                                                </span>
+                                                <span class="fareinfo-two">
+                                                    1,322,000 vnd
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Viet Nam Airlanes -->
+                        <div class="content-col-left-book fareinfo">
+                            <div class="content-col-left-book__wrap">
+                                <div class="content-col-right-box__adv">
+                                    <div class="content-col-right-box__adv-cricle">
+                                        <span class="img-bgvn">
+                                            <img src="./img/bg-vn.png" alt="">
+                                        </span>
+                                        <span class="img-logovn">
+                                            <img src="./img/logo-vn.png" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="content-col-right-box__adv-list">
+                                        <span class="content-col-right-box__adv--bamboo">Vietnam Airlines</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-right-box__list">
+                                    <div class="content-col-right-box__list-time">
+                                        <span>21:40</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                    <div class="content-col-right-box__list-line">
+                                        <img src="./img/cricle-white.png" alt="">
+                                        <span class="before-img"><img src="./img/line.png" alt=""></span>
+                                        <img src="./img/cricle-black.png" alt="">
+                                    </div>
+                                    <div class="content-col-right-box__list-time">
+                                        <span>23:10</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__wrap-kg">
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/bag.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                Baggage <span class="color-bag">20kg</span>
+                                            </span>
+                                            <span class="content-col-left-book__price">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/meal.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                In-flight <span class="color-bag">Meal</span>
+                                            </span>
+                                            <span class="content-col-left-book__prices">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__choose">
+                                    <div class="content-col-left-book__choose-btn">
+                                        <span>Choose</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-col-left-tab bottom-flex">
+                                <div class="content-col-left-tab__tablink">
+                                    <button class="tablinks tablink-vn" onclick="openClick(event, 'flight')"
+                                        id="defaultOpen">Flight
+                                        detail</button>
+                                    <button class="tablink" onclick="openClick(event, 'fare')">fare info</button>
+                                </div>
+                            </div>
+                            <div class="content-col-left-infor tabcontent">
+
+                            </div>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Bamboo Airways -->
+                        <div class="content-col-left-book fareinfo">
+                            <div class="content-col-left-book__wrap">
+                                <div class="content-col-right-box__adv">
+                                    <div class="content-col-right-box__adv-cricle">
+                                        <img src="./img/adv-bamboo.png" alt="">
+                                    </div>
+                                    <div class="content-col-right-box__adv-list">
+                                        <span class="content-col-right-box__adv--bamboo">Bamboo Airways</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-right-box__list">
+                                    <div class="content-col-right-box__list-time">
+                                        <span>21:40</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                    <div class="content-col-right-box__list-line">
+                                        <img src="./img/cricle-white.png" alt="">
+                                        <span class="before-img"><img src="./img/line.png" alt=""></span>
+                                        <img src="./img/cricle-black.png" alt="">
+                                    </div>
+                                    <div class="content-col-right-box__list-time">
+                                        <span>23:10</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__wrap-kg">
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/bag.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                Baggage <span class="color-bag">20kg</span>
+                                            </span>
+                                            <span class="content-col-left-book__price">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/meal.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                In-flight <span class="color-bag">Meal</span>
+                                            </span>
+                                            <span class="content-col-left-book__prices">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__choose">
+                                    <div class="content-col-left-book__choose-btn">
+                                        <span>Choose</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-col-left-tab">
+                                <div class="content-col-left-tab__tablink">
+                                    <button class="tablink">Flight detail</button>
+                                    <button class="tablinks-two">fare info</button>
+                                </div>
+                                <span class="border"></span>
+                            </div>
+                            <div class="content-col-left-infor tabcontent">
+
+                            </div>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Viet Nam Airlanes -->
+                        <div class="content-col-left-book fareinfo">
+                            <div class="content-col-left-book__wrap">
+                                <div class="content-col-right-box__adv">
+                                    <div class="content-col-right-box__adv-cricle">
+                                        <span class="img-bgvn">
+                                            <img src="./img/bg-vn.png" alt="">
+                                        </span>
+                                        <span class="img-logovn">
+                                            <img src="./img/logo-vn.png" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="content-col-right-box__adv-list">
+                                        <span class="content-col-right-box__adv--bamboo">Vietnam Airlines</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-right-box__list">
+                                    <div class="content-col-right-box__list-time">
+                                        <span>21:40</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                    <div class="content-col-right-box__list-line">
+                                        <img src="./img/cricle-white.png" alt="">
+                                        <span class="before-img"><img src="./img/line.png" alt=""></span>
+                                        <img src="./img/cricle-black.png" alt="">
+                                    </div>
+                                    <div class="content-col-right-box__list-time">
+                                        <span>23:10</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__wrap-kg">
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/bag.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                Baggage <span class="color-bag">20kg</span>
+                                            </span>
+                                            <span class="content-col-left-book__price">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/meal.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                In-flight <span class="color-bag">Meal</span>
+                                            </span>
+                                            <span class="content-col-left-book__prices">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__choose">
+                                    <div class="content-col-left-book__choose-btn">
+                                        <span>Choose</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-col-left-tab bottom-flex">
+                                <div class="content-col-left-tab__tablink">
+                                    <button class="tablinks">Flight detail</button>
+                                    detail</button>
+                                    <button class="tablink">fare info</button>
+                                </div>
+                            </div>
+                            <div class="content-col-left-infor tabcontent">
+
+                            </div>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Bamboo Airways -->
+                        <div class="content-col-left-book fareinfo">
+                            <div class="content-col-left-book__wrap">
+                                <div class="content-col-right-box__adv">
+                                    <div class="content-col-right-box__adv-cricle">
+                                        <img src="./img/adv-bamboo.png" alt="">
+                                    </div>
+                                    <div class="content-col-right-box__adv-list">
+                                        <span class="content-col-right-box__adv--bamboo">Bamboo Airways</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-right-box__list">
+                                    <div class="content-col-right-box__list-time">
+                                        <span>21:40</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                    <div class="content-col-right-box__list-line">
+                                        <img src="./img/cricle-white.png" alt="">
+                                        <span class="before-img"><img src="./img/line.png" alt=""></span>
+                                        <img src="./img/cricle-black.png" alt="">
+                                    </div>
+                                    <div class="content-col-right-box__list-time">
+                                        <span>23:10</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__wrap-kg">
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/bag.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                Baggage <span class="color-bag">20kg</span>
+                                            </span>
+                                            <span class="content-col-left-book__price">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/meal.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                In-flight <span class="color-bag">Meal</span>
+                                            </span>
+                                            <span class="content-col-left-book__prices">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__choose">
+                                    <div class="content-col-left-book__choose-btn">
+                                        <span>Choose</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-col-left-tab">
+                                <div class="content-col-left-tab__tablink">
+                                    <button class="tablink">Flight detail</button>
+                                    <button class="tablinks-two">fare info</button>
+                                </div>
+                                <span class="border"></span>
+                            </div>
+                            <div class="content-col-left-infor tabcontent">
+
+                            </div>
+                        </div>
+                        <!-- End -->
+
+                        <!-- Viet Nam Airlanes -->
+                        <div class="content-col-left-book fareinfo">
+                            <div class="content-col-left-book__wrap">
+                                <div class="content-col-right-box__adv">
+                                    <div class="content-col-right-box__adv-cricle">
+                                        <span class="img-bgvn">
+                                            <img src="./img/bg-vn.png" alt="">
+                                        </span>
+                                        <span class="img-logovn">
+                                            <img src="./img/logo-vn.png" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="content-col-right-box__adv-list">
+                                        <span class="content-col-right-box__adv--bamboo">Vietnam Airlines</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-right-box__list">
+                                    <div class="content-col-right-box__list-time">
+                                        <span>21:40</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                    <div class="content-col-right-box__list-line">
+                                        <img src="./img/cricle-white.png" alt="">
+                                        <span class="before-img"><img src="./img/line.png" alt=""></span>
+                                        <img src="./img/cricle-black.png" alt="">
+                                    </div>
+                                    <div class="content-col-right-box__list-time">
+                                        <span>23:10</span>
+                                        <span class="content-col-right-box__list-time--dad">DAD</span>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__wrap-kg">
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/bag.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                Baggage <span class="color-bag">20kg</span>
+                                            </span>
+                                            <span class="content-col-left-book__price">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content-col-left-book__wrap-kg-bag">
+                                        <img src="./img/meal.png" alt="">
+                                        <div class="content-col-left-book__wrap-kg-bag-title">
+                                            <span>
+                                                In-flight <span class="color-bag">Meal</span>
+                                            </span>
+                                            <span class="content-col-left-book__prices">
+                                                1,322,000 vnd
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-col-left-book__choose">
+                                    <div class="content-col-left-book__choose-btn">
+                                        <span>Choose</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-col-left-tab bottom-flex">
+                                <div class="content-col-left-tab__tablink">
+                                    <button class="tablinks tablink-vn">Flight
+                                        detail</button>
+                                    <button class="tablink">fare info</button>
+                                </div>
+                            </div>
+                            <div class="content-col-left-infor tabcontent">
+
+                            </div>
+                        </div>
+                        <!-- End -->
+                    </div>
+                    <!-- Column Right -->
+                    <div class="content-col-right">
+                        <div class="content-col-right-box">
+                            <div class="content-col-right-box__title">
+                                <span>YOUR FLIGHTS</span>
+                                <hr>
+                            </div>
+                            <div class="content-col-right-box__adv">
+                                <div class="content-col-right-box__adv-cricle">
+                                    <span class="content-col-right-box__adv--number">01</span>
+                                </div>
+                                <div class="content-col-right-box__adv-list">
+                                    <span class="content-col-right-box__adv--date">Fri, 11 Feb, 2022</span>
+                                    <span class="content-col-right-box__adv--location">Da Nang - Ho Chi Minh</span>
+                                </div>
+                            </div>
+                            <div class="content-col-right-box__adv">
+                                <div class="content-col-right-box__adv-cricle">
+                                    <img src="./img/adv-bamboo.png" alt="">
+                                </div>
+                                <div class="content-col-right-box__adv-list">
+                                    <span class="content-col-right-box__adv--bamboo">Bamboo Airways</span>
+                                    <span class="content-col-right-box__adv--details">Details</span>
+                                </div>
+                            </div>
+                            <div class="content-col-right-box__list">
+                                <div class="content-col-right-box__list-time">
+                                    <span>21:40</span>
+                                    <span class="content-col-right-box__list-time--dad">DAD</span>
+                                </div>
+                                <div class="content-col-right-box__list-line">
+                                    <img src="./img/cricle-white.png" alt="">
+                                    <span class="before-img"><img src="./img/line.png" alt=""></span>
+                                    <img src="./img/cricle-black.png" alt="">
+                                </div>
+                                <div class="content-col-right-box__list-time">
+                                    <span>23:10</span>
+                                    <span class="content-col-right-box__list-time--dad">DAD</span>
+                                </div>
+                            </div>
+                            <div class="content-col-right-box__btn">
+                                <div class="content-col-right-btn hvr-grow-shadow">
+                                    <div class="content-col-right-btn__text">
+                                        <span>Change departure flight</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-col-right-box__adv">
+                                <div class="content-col-right-box__adv-cricle">
+                                    <span class="content-col-right-box__adv--number number-color">02</span>
+                                </div>
+                                <div class="content-col-right-box__adv-list">
+                                    <span class="content-col-right-box__adv--date">Sun, 13 Feb, 2022</span>
+                                    <span class="content-col-right-box__adv--location">Ho Chi Minh - Da Nang</span>
+                                </div>
+                            </div>
+                            <div class="content-col-right-box__footer">
+                                <div class="content-col-right-box__footer-price">
+                                    <span>Subtotal</span>
+                                    <span class="content-col-right-box__footer-price--vnd">1,322,000 vnd</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-box">
+                        <div class="footer-contact">
+                            <div class="footer-contact-inner">
+                                <div class="footer-contact-col eng-lang">
+                                    <i class="ic-phone"></i>
+                                    <a href="tel:0903873915">Call us: 0903 873 915</a>
+                                </div>
+                                <div class="footer-contact-col vn-lang">
+                                    <i class="ic-phone"></i>
+                                    <a href="tel:0903873915">Số điện thoại: 0903 873 915</a>
+                                </div>
+                                <div class="footer-contact-col">
+                                    <i class="ic-mail"></i>
+                                    <span>Email: nvhoangphi0905@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="footer-contact-inner eng-lang">
+                                <p>Follow us</p>
+                                <span class="line"></span>
+                                <i class="ic-facebook"></i>
+                                <i class="ic-instagram"></i>
+                            </div>
+                            <div class="footer-contact-inner vn-lang">
+                                <p>Mạng xã hội</p>
+                                <span class="line"></span>
+                                <i class="ic-facebook"></i>
+                                <i class="ic-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/library/jquery/jquery.js"></script>
+    <script src="./js/library/jquery/jquery-min.js"></script>
+    <script src="./js/modules/datetimeModule.js"></script>
+    <script src="./js/main.js" type="module"></script>
+
+</body>
+
+</html>
